@@ -1,4 +1,4 @@
-# Proba-repo
+# Comandos en GIT
 ## Práctica 1: creación e conexión de repositorios git
 
 ### Comandos empregados
