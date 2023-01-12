@@ -66,4 +66,9 @@ git pull --all
 ### PASOS A SEGUIR NA PRÁCTICA
 
 1. inicializar repo local co comando `git init`.
-2. .....
+2. Configurar o nome de usuario con `git config --global user.name "nome"
+3. Configurar a conta de correo con `git config --global user.email correo
+4. `git config --list
+5. 
+
+
