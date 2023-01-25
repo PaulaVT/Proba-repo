@@ -6,17 +6,18 @@
 ```bash
 git init
 ```
->sirve para inicializar un repo local
+>Con este comando crearase un novo repositorio de Git. Serve tanto para crear un respositorio valeiro como para converter un proxecto xa existente nun repositorio de Git.
 
 ```bash
 git config --global user.name "nome de usuario"
 ```
->sirve para inicializar un repo local
+>Con este comando configurase o nome de usuario do repositorio
 
->```bash
+```bash
 git config --global user.email contade@correo
 ```
->sirve para inicializar un repo local
+>Serve para indicarlle a Git cal vai a ser o correo electrónico para todos os repositorios locais.
+Tamén se pode empregar --local user.email para poder empregar diferentes contas.
 
 ```bash
 git config --list
@@ -41,7 +42,7 @@ git commit -m "mensaxe"
 ```bash
 git log --online --graph --decorate --all
 ```
->sirve para inicializar un repo local
+>sirve para ver o historial completo
 
 ```bash
 git branch -M main
@@ -62,7 +63,13 @@ git push -u origin main
 git pull --all
 ```
 >sirve para inicializar un repo local
+-----------------------------------------------------------------------------------
+```bash
+git clone
+```
+>Empregase para copiar un repositorio.
 
+-----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
 
 1. inicializar repo local co comando `git init`.
