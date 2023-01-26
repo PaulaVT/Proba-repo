@@ -22,22 +22,27 @@ Tamén se pode empregar --local user.email para poder empregar diferentes contas
 ```bash
 git config --list
 ```
->sirve para inicializar un repo local
+>Con este comando podemos comprobar todas as propiedades de Git configuradas.
 
 ```bash
 git add .
 ```
->sirve para inicializar un repo local
+>Sirve para engadir o proxecto ao Staging Area (que é o lugar onde se atopan os datos do proxecto e os seus cambios)
 
 ```bash
 git status
 ```
->sirve para inicializar un repo local
+>Este comnando mostra o estado do directorio de traballo, permite ver os cambios que se prepararon e os que nosm, así como os arquivos Git nos que non se vai a realizar seguimento. 
+
+```bash
+git commit
+```
+>Garda o contido actual do índice en un novo commit.
 
 ```bash
 git commit -m "mensaxe"
 ```
->sirve para inicializar un repo local
+>sirve para poñer unha mensaxe ao commit
 
 ```bash
 git log --online --graph --decorate --all
@@ -47,7 +52,7 @@ git log --online --graph --decorate --all
 ```bash
 git branch -M main
 ```
->sirve para inicializar un repo local
+>Cambia a rama do repositorio a Main
 
 ```bash
 git remote add origin dirección repositorio github
