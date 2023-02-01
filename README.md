@@ -69,10 +69,7 @@ git pull --all
 ```
 >sirve para inicializar un repo local
 -----------------------------------------------------------------------------------
-```bash
-git clone
-```
->Empregase para copiar un repositorio.
+
 
 -----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
@@ -83,4 +80,30 @@ git clone
 4. `git config --list
 5. 
 
+
+-------------------------------------------------------------------------
+```bash
+git clone
+```
+>Empregase para copiar un repositorio.
+
+
+```bash
+git reset --hard oquesea
+```
+>sirve para
+
+
+```bash
+git remote -v
+```
+>sirve para
+```bash
+git remote add nome link
+```
+>sirve para
+```bash
+git remote remove origin
+```
+>sirve para
 
