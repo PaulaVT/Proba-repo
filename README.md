@@ -57,28 +57,36 @@ git branch -M main
 ```bash
 git remote add origin dirección repositorio github
 ```
->sirve para inicializar un repo local
+>A súa utilidade é a e conectar o repositorio local, ou de traballo ao repositorio remoto.
 
 ```bash
 git push -u origin main
 ```
->sirve para inicializar un repo local
+>Empregase para poder subir o contido de dito repositorio de traballo ao repositorio remoto.
 
 ```bash
 git pull --all
 ```
->sirve para inicializar un repo local
+>Serve para descargar o contido do repositorio remoto ao de traballo.
 -----------------------------------------------------------------------------------
 
 
 -----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
 
-1. inicializar repo local co comando `git init`.
+1. Inicializar repo local co comando `git init`.
 2. Configurar o nome de usuario con `git config --global user.name "nome"
 3. Configurar a conta de correo con `git config --global user.email correo
 4. `git config --list
-5. 
+5. Crear o contido, neste caso os arquivos index.html e engadilos empregando o comando `git add .`
+6. Realizamos un commit coa mensaxe "Creación do proxecto".
+7. Cambiamonos de rama a main empregando `git branch -M main`.
+8. Conectamos o noso repositorio de traballo co repositorio remoto a través de `git remote add origin direccionDoRepo`.
+9. Subimos o contido creado no repositorio local ao repositorio en liña empregando git push
+10. Creamos o arquivo README.md
+11. Baixamos eses arquivos do repositorio en liña ao local con `git pull --all`
+
+
 
 
 -------------------------------------------------------------------------
