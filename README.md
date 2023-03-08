@@ -52,7 +52,7 @@ git log --online --graph --decorate --all
 ```bash
 git branch -M main
 ```
->Cambia a rama do repositorio a Main
+>Cambia a rama do repositorio a Main forzando o cambio
 
 ```bash
 git remote add origin dirección repositorio github
@@ -68,6 +68,11 @@ git push -u origin main
 git pull --all
 ```
 >Serve para descargar o contido do repositorio remoto ao de traballo.
+
+```bash
+git diff
+```
+>Serve para mostrar as diferencias entre o directorio de traballo actual (é dicir, os cambios que aínda non foron confirmados) e o último commit.
 -----------------------------------------------------------------------------------
 
 
@@ -88,16 +93,15 @@ git pull --all
 
 
 
-
+## Práctica 2: Historial de Cambios
 -------------------------------------------------------------------------
 ```bash
-git clone
+git clone dirección
 ```
 >Empregase para copiar un repositorio.
 
-
 ```bash
-git reset --hard oquesea
+git reset --hard 5 1º caracteres del commit
 ```
 >sirve para
 
