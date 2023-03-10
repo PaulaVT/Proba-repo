@@ -1,5 +1,5 @@
 # Comandos en GIT
-## Práctica 1: creación e conexión de repositorios git
+## Práctica 1: creación, conexión e actualización de repositorios git
 
 ### Comandos empregados
 
@@ -117,18 +117,108 @@ git reset --hard 5 1º caracteres del commit
 ```
 >sirve para descartar todos os cambios que non se gardaron e volver ao estado anterior, ben sexa nun commit específico ou nun estado anterior do HEAD.
 
+
+```bash
+git remote remove repositorio
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+
+-----------------------------------------------------------------------------
+### PASOS A SEGUIR NA PRÁCTICA
+
+1. Creamos o repositorio de Libro.
+2. Configurar o nome de usuario con `git config --global user.name "nome"`
+3. Configurar a conta de correo con `git config --global user.email correo`
+4. `git config --list`
+5. Crear o contido, neste caso os arquivos index.html e engadilos empregando o comando `git add .`
+6. Realizamos un commit coa mensaxe "Creación do proxecto".
+7. Cambiamonos de rama a main empregando `git branch -M main`.
+8. Conectamos o noso repositorio de traballo co repositorio remoto a través de `git remote add origin direccionDoRepo`.
+9. Subimos o contido creado no repositorio local ao repositorio en liña empregando `git push`
+10. Creamos o arquivo README.md
+11. Baixamos eses arquivos do repositorio en liña ao local con `git pull --all`
+
+
+
+## Práctica 4: Desfacer cambios
+-------------------------------------------------------------------------
+```bash
+git remote remove repositorio
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+## Práctica 5: Ramas
+-------------------------------------------------------------------------
+```bash
+git branch nomeRama
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+```bash
+git branch -av
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+```bash
+git checkout nomeRama
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+```bash
+git merge nomeRama
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+```bash
+git branch -d nomeRama
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+
+-----------------------------------------------------------------------------
+### PASOS A SEGUIR NA PRÁCTICA
+
+1. Creamos o repositorio de Libro.
+
+
+
+
+## Práctica 6: Repositorios remotos
+-------------------------------------------------------------------------
+```bash
+git remote add nomeRepo urlRepo
+```
+>Empregase para agregar un novo repo remoto ao repo local a través da dirección url 
+
 ```bash
 git remote -v
 ```
 > Emprégase para mostrar un listado dos repositorios remotos configurados no repo local e as direccións web de cada un deles.
 
 ```bash
-git remote add nome link
+git push nomeRepo nomeRama
 ```
->sirve para agregar un novo repositorio remoto ao repositorio local.
+>Usámolo para enviar os cambios nunha rama en específico ao repositorio remoto.
 
 ```bash
-git remote remove repositorio
+git checkout -b rama
 ```
 >Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+```bash
+git commit -am "mensaxe"
+```
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
+
+-----------------------------------------------------------------------------
+### PASOS A SEGUIR NA PRÁCTICA
+
+1. Creamos un novo repositorio en Github e engadímolo no repo local a través de `git clone url`.
+2. Comprobamos que esté todo ben facendo un `git remote -v` e vendo todos os repositorios remotos.
+3. Agora facemos o mesmo, pero clonando o repositorio de outro usuario.
+4. Dentro del engadimos un ficheiro de autores e con nome de usuario e correo electrónico.
+5. Engadimos os cambios a zona de intercambio temporal con `git add.` e facemos un commit avisando a través dunha mensaxe dos mesmos.
+6. Subimos os cambios ao repositorio remoto con un `git push`.
+7. TODO O DO FORK
 
