@@ -69,10 +69,6 @@ git pull --all
 ```
 >Serve para descargar o contido do repositorio remoto ao de traballo.
 
-```bash
-git diff
-```
->Serve para mostrar as diferencias entre o directorio de traballo actual (é dicir, os cambios que aínda non foron confirmados) e o último commit.
 -----------------------------------------------------------------------------------
 
 
@@ -95,27 +91,44 @@ git diff
 
 ## Práctica 2: Historial de Cambios
 -------------------------------------------------------------------------
+
+```bash
+git diff
+```
+>Serve para mostrar as diferencias entre o directorio de traballo actual (é dicir, os cambios que aínda non foron confirmados) e o último commit.
+
+```bash
+git diff HEAD~2..HEAD
+```
+>Serve para comparar as diferencas entre o estado actual do repositorio e o estado do mesmo dous commits atrás.
+
 ```bash
 git clone dirección
 ```
->Empregase para copiar un repositorio.
+>Empregase para clonar un repositorio.
+
+```bash
+git annotate documento.extension
+```
+>Empregase para saber quen ou quenes foron os que modificaron os arquivos e en que commit o fixeron.
 
 ```bash
 git reset --hard 5 1º caracteres del commit
 ```
->sirve para
-
+>sirve para descartar todos os cambios que non se gardaron e volver ao estado anterior, ben sexa nun commit específico ou nun estado anterior do HEAD.
 
 ```bash
 git remote -v
 ```
->sirve para
+> Emprégase para mostrar un listado dos repositorios remotos configurados no repo local e as direccións web de cada un deles.
+
 ```bash
 git remote add nome link
 ```
->sirve para
+>sirve para agregar un novo repositorio remoto ao repositorio local.
+
 ```bash
-git remote remove origin
+git remote remove repositorio
 ```
->sirve para
+>Utilizamolo para eliminar un repositorio remoto do  repo local.
 
