@@ -153,33 +153,34 @@ git remote remove repositorio
 ```bash
 git branch nomeRama
 ```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
+>Utilizamolo para crear una nova rama.
 
 ```bash
 git branch -av
 ```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
+>Empregase para mostrar todas as ramas que existen tanto localmente como no repositorio remoto.
 
 ```bash
 git checkout nomeRama
 ```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
+>Serve para cambiar de rama.
 
 ```bash
 git merge nomeRama
 ```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
+>Serve fusionar a rama que desexemos coa rama na que estemos nese momento. É importante ter en conta que, en algúns casos, pode haber conflitos de fusión que deben resolverse manualmente.
 
 ```bash
 git branch -d nomeRama
 ```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
+>Utilizamolo para eliminar unha rama unha vez feito o merge e sempre que non conteña novos cambios.
 
 
 -----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
 
-1. Creamos o repositorio de Libro.
+1. Creamos a rama bibliografía e mostramos as ramas do repo.
+2. Logo creamos capitulo4.txt
 
 
 
