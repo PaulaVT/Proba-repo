@@ -1,5 +1,5 @@
 # Comandos en GIT
-## Práctica 1: creación, conexión e actualización de repositorios git
+## Práctica 1 e 2: creación, conexión e actualización de repositorios git
 
 ### Comandos empregados
 
@@ -18,6 +18,11 @@ git config --global user.email contade@correo
 ```
 >Serve para indicarlle a Git cal vai a ser o correo electrónico para todos os repositorios locais.
 Tamén se pode empregar --local user.email para poder empregar diferentes contas.
+
+```bash
+git config --global color.ui auto
+```
+>Serve para poder cambiar a cor da interfaz de usuario.
 
 ```bash
 git config --list
@@ -86,11 +91,17 @@ git pull --all
 9. Subimos o contido creado no repositorio local ao repositorio en liña empregando `git push`
 10. Creamos o arquivo README.md
 11. Baixamos eses arquivos do repositorio en liña ao local con `git pull --all`
+---
+12. Creamos o repositorio Libro.
+13. Creamos o arquivo índice e engadímolo ao repositorio.
+14. Realizamos un commit e comprobamos o estado do respositorio.
+15. Modificamos índice e mostramos os cambios respecto da última versión.
+16. Facemos un commit dos cambios e logo cambiamos a mensaxe do commit.
+17. Finalmente volvemos mostrar os cambios no repositorio.
 
-
-
-## Práctica 2: Historial de Cambios
+## Práctica 3: Historial de Cambios
 -------------------------------------------------------------------------
+###Comandos empregados:
 
 ```bash
 git diff
@@ -117,7 +128,6 @@ git reset --hard 5 1º caracteres del commit
 ```
 >sirve para descartar todos os cambios que non se gardaron e volver ao estado anterior, ben sexa nun commit específico ou nun estado anterior do HEAD.
 
-
 ```bash
 git remote remove repositorio
 ```
@@ -127,18 +137,9 @@ git remote remove repositorio
 -----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
 
-1. Creamos o repositorio de Libro.
-2. Configurar o nome de usuario con `git config --global user.name "nome"`
-3. Configurar a conta de correo con `git config --global user.email correo`
-4. `git config --list`
-5. Crear o contido, neste caso os arquivos index.html e engadilos empregando o comando `git add .`
-6. Realizamos un commit coa mensaxe "Creación do proxecto".
-7. Cambiamonos de rama a main empregando `git branch -M main`.
-8. Conectamos o noso repositorio de traballo co repositorio remoto a través de `git remote add origin direccionDoRepo`.
-9. Subimos o contido creado no repositorio local ao repositorio en liña empregando `git push`
-10. Creamos o arquivo README.md
-11. Baixamos eses arquivos do repositorio en liña ao local con `git pull --all`
-
+1. Clonamos o repositorio Libro de: https://github.com/asalber/libro-git
+2. Dentro do mesmo creamos a carpeta capítulos e un ficheiro chamado capitulo1.
+3. 
 
 
 ## Práctica 4: Desfacer cambios
@@ -179,14 +180,30 @@ git branch -d nomeRama
 -----------------------------------------------------------------------------
 ### PASOS A SEGUIR NA PRÁCTICA
 
-1. Creamos a rama bibliografía e mostramos as ramas do repo.
-2. Logo creamos capitulo4.txt
+1. Creamos a rama bibliografía.
+2. 
+1. Creamos unha nova rama nuevaRama.
+2. Facemos un commit para avanzar coa rama main.
+3. Facemos un checkout para apuntar á rama nuevaRama. 
+4. Facemos un commit para avanzar coa rama nuevaRama.
+5. Ahora temos dous commits diferentes, e a cada un apunta unha rama diferente.
+6. Facemos un checkout main.
+7. Facemos un marge nuevaRama para combinar as ramas, crearase un novo commit.
+8. Borramos nuevaRama con branch -d.
+9. Creamos unha nova rama con branch nuevaRama2.
+10. Facemos o proceso anterior para separar as dúas ramas que temos agora mesmo.
+11. Nunha rama editamos un ficheiro, e na outra editamos o mismo ficheiro, pero de forma diferente.
+12. Colocamonos na rama main con checkout.
+13. Facemos o commit -a -m ""Mensaxe", daranos un error porque o ficheiro que editamos de diferente forma nas duas ramas non o pode combinar.
+14. Daremoslle á opción de combinar todo e engadirá todo o contido dos dous arquivos.
 
 
 
 
 ## Práctica 6: Repositorios remotos
 -------------------------------------------------------------------------
+###Comandos empregados
+
 ```bash
 git remote add nomeRepo urlRepo
 ```
@@ -221,5 +238,5 @@ git commit -am "mensaxe"
 4. Dentro del engadimos un ficheiro de autores e con nome de usuario e correo electrónico.
 5. Engadimos os cambios a zona de intercambio temporal con `git add.` e facemos un commit avisando a través dunha mensaxe dos mesmos.
 6. Subimos os cambios ao repositorio remoto con un `git push`.
-7. TODO O DO FORK
+7. Finalmente comprobamos que p push e todos os cambios están ben feitos vendo todos os commits do proxecto.
 
