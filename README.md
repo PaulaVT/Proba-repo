@@ -139,15 +139,16 @@ git remote remove repositorio
 
 1. Clonamos o repositorio Libro de: https://github.com/asalber/libro-git
 2. Dentro do mesmo creamos a carpeta capítulos e un ficheiro chamado capitulo1.
-3. 
+3. Engadimolo ao repositorio e facemos un commit.
+4. Mostramos os cambios.
+5. Creamos o ficheiro capitulo2.txt co contido indicado, engadimolo ao repositorio e facemos un commit
+6. Mostramos as diferencias entre a versión actual e dúas versións antes.
+7. Creamos o ficheiro capitulo3.txt co contido indicado, engadímolo ao repositorio e facemos un commit
+8. Mostramos as diferencias entre a primeira e a última versión do repositorio.
+9. Engadimos ao final do ficheiro indice.txt a liña "Capítulo 5: Conceptos avanzados"
+10. Engadímolo ao repositorio e facemos un commit.
+11. Mostramos quen fixo os cambios no ficheiro indice.txt
 
-
-## Práctica 4: Desfacer cambios
--------------------------------------------------------------------------
-```bash
-git remote remove repositorio
-```
->Utilizamolo para eliminar un repositorio remoto do  repo local.
 
 ## Práctica 5: Ramas
 -------------------------------------------------------------------------
